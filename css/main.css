@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+  font-size: 11px;
+  line-height: 11px;
+}
+.background {
+  position: absolute;
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: url("/bgs/059.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.card {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+left: 50%;
+padding: 25px;
+margin-left: -165px;
+position: absolute;
+top: 50%;
+margin-top: -190px;
+width: 330px;
+z-index: 10;
+text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: #333;
+  text-shadow: 1px 1px 0px #fff;
+  letter-spacing: 3px;
+  line-height: 70px;
+  font-weight: normal;
+}
+strong {
+  color: #333;
+  font-size: 27px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+p {
+  overflow: hidden;
+  border-top: 2px solid #111;
+  height: auto;
+  padding-bottom: 20px;
+  transition: height 1s;
+}
+
+p a {
+  display: inline-block;
+  height: 39px;
+  padding: 0 10px;
+}
+
+p a:hover img {
+  top: 5px;
+}
+
+p img {
+  position: relative;
+  top: 15px;
+  border: none;
+  width: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px -5px #000;
+  transition: top 0.5s;
+}
+.credits {
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding: 5px;
+  color: #ffffff;
+}
+.credits a {
+  color: #ffffff;
+}
+.creator {
+    bottom: 0;
+    color: #EEEEEE;
+    font-family: monospace;
+    font-size: 11px;
+    left: 0;
+    line-height: 20px;
+    margin: 0 10%;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+}
+
+.pic {
+  border: 1px solid #CCC;
+  padding: 2px;
+  box-shadow: 1px 1px 2px #666;
+  width: 110px;
+  float:left;
+  margin-right: 20px;
+  background-color: #fff;
+}
+
+blockquote {
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  z-index: 9;
+  top: 50%;
+  margin-top: 0px;
+  font-weight: normal;
+  color: white;
+  left: 50%;
+  margin-left: -250px;
+  text-shadow: 2px 2px 6px #333;
+  font-size: 50px;
+  text-align: justify;
+  line-height: 64px;
+  letter-spacing: 3px;
+  /*text-indent: 60px;*/
+  font-family: 'Rancho', cursive;
+}
+blockquote:before {
+  padding: 0 0 0 0;
+  margin-left: -15px;
+  content: '“';
+  content: open-quote;
+}
+
+blockquote:after {  
+  padding: 0 0 0 0;
+  margin-right: -15px;
+  content: '“';
+  content: close-quote;
+}
+
+@media screen and (orientation:portrait) {
+  .card {
+    text-align: center;
+    left: auto;
+    width: 80%;
+    top: 10%;
+    margin: 0 10%;
+  }
+  blockquote {
+    width: 80%;
+    left: 0;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 10%;
+    text-indent: 0;
+  }
+}
+
+
+@media screen and (orientation:landscape) {
+
+}
